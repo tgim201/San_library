@@ -1,0 +1,51 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 익명 닉네임과 연결된 독서 기록 컬렉션 (reading_logs) + 실시간 동시접속 상태 문서 (_live_room_presence)
+    match /reading_logs/{logId} {
+      allow read: if true;
+
+      allow create, update: if (
+        logId == '_live_room_presence' ||
+        (
+          request.resource.data.keys().hasAll([
+            'nickname',
+            'bookTitle',
+            'status',
+            'totalSeconds',
+            'quote',
+            'createdAt',
+            'createdAtMs'
+          ]) &&
+          request.resource.data.keys().hasOnly([
+            'id',
+            'nickname',
+            'bookTitle',
+            'status',
+            'totalSeconds',
+            'quote',
+            'memo',
+            'progressNote',
+            'mapName',
+            'createdAt',
+            'createdAtMs'
+          ]) &&
+          request.resource.data.nickname is string &&
+          request.resource.data.nickname.size() > 0 &&
+          request.resource.data.nickname.size() <= 30 &&
+          request.resource.data.bookTitle is string &&
+          request.resource.data.bookTitle.size() > 0 &&
+          request.resource.data.bookTitle.size() <= 100 &&
+          request.resource.data.status in ['completed', 'reading'] &&
+          request.resource.data.totalSeconds is number &&
+          request.resource.data.totalSeconds >= 0 &&
+          request.resource.data.quote is string &&
+          request.resource.data.quote.size() > 0 &&
+          request.resource.data.quote.size() <= 300
+        )
+      );
+
+      allow delete: if false;
+    }
+  }
+}

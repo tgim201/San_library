@@ -18,9 +18,9 @@
   4. `해리포터와 비밀의방(조앤.K.롤링)`
 - `.nojekyll` : GitHub Pages 배포 시 한글/특수문자 파일명(MP3 등)이 누락 없이 서빙되도록 보장하는 설정 파일
 - **배경음 MP3 파일 (3종)**
-  - Map 1 (앤틱 벽난로 서재): `🔥 장작불 타는 소리 ASMR 🔥 2시간 벽난로 소리  Cozy Fireplace Sounds.mp3`
-  - Map 2 (비 내리는 창가 도서관): `[ASMR] 봄을 기다리는 밤 💨🌳🦉 바람소리, 밤부엉이와 코요테 소리를 담은 한 밤 중 숲 속의 페이크윈도우(가짜창문).mp3`
-  - Map 3 (심야 한옥 다실 서재): `[공부ASMR] 비 오는 도시뷰 앞에서 1시간 집중 타이머  빗소리로 집중력 높이기 l 1-Hour Focus Timer with Rain Sounds.mp3` (+ 은은한 풍경소리 레이어링 유지)
+  - Map 1 (앤틱 벽난로 서재): `🔥 장작불 타는 소리 ASMR 🔥 2시간 벽난로 소리 Cozy Fireplace Sounds (compressed by happyscribe (mp3cut.net).mp3`
+  - Map 2 (비 내리는 창가 도서관): `[ASMR] 봄을 기다리는 밤 💨🌳🦉 바람소리, 밤부엉이와 코요테 소리를 담은 한 밤 중 숲 속의 페이크윈도우(가짜창문) (1) (1).mp3`
+  - Map 3 (심야 한옥 다실 서재): `[공부ASMR] 비 오는 도시뷰 앞에서 1시간 집중 타이머 빗소리로 집중력 높이기 l 1-Hour Focus Timer with Rain Sounds (1).mp3` (+ 은은한 풍경소리 레이어링 유지)
 
 ---
 

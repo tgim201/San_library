@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>심야의 고요한 실내 서재 | The Silent Library</title>
+  <title>San 고요한 서재 | The Silent Library</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts: Nanum Myeongjo & Pretendard -->
@@ -610,10 +610,10 @@
     const WORLD_H = 820;
 
     const MAPS = [
-      // MAP 0: 벽난로가 있는 앤틱 원목 서재 (Fireplace Archive)
+      // MAP 0: 벽난로가 있는 서재 (Fireplace Archive)
       {
         id: 0,
-        name: "벽난로가 있는 앤틱 원목 서재",
+        name: "벽난로가 있는 서재",
         engName: "Fireplace Archive",
         soundLabel: "벽난로 장작 소리",
         floorBase: "#241913",
@@ -695,7 +695,7 @@
         ]
       },
 
-      // MAP 2: 고요한 심야 한옥 다실 서재 (Night Hanok Study)
+      // MAP 2: 고요한 심야 한옥 서재 (Night Hanok Study)
       {
         id: 2,
         name: "고요한 심야 한옥 다실 서재",
@@ -742,9 +742,9 @@
      * 3. MP3 BACKGROUND ASMR + WEB AUDIO API FOLEY & CHIME ENGINE
      ********************************************************************/
     const MAP_BGM_MP3_FILES = {
-      0: "./" + encodeURI("🔥 장작불 타는 소리 ASMR 🔥 2시간 벽난로 소리  Cozy Fireplace Sounds.mp3"),
-      1: "./" + encodeURI("[공부ASMR] 비 오는 도시뷰 앞에서 1시간 집중 타이머  빗소리로 집중력 높이기 l 1-Hour Focus Timer with Rain Sounds.mp3"),
-      2: "./" + encodeURI("[ASMR] 봄을 기다리는 밤 💨🌳🦉 바람소리, 밤부엉이와 코요테 소리를 담은 한 밤 중 숲 속의 페이크윈도우(가짜창문).mp3")
+      0: "./" + encodeURI("장작소리.mp3"),
+      1: "./" + encodeURI("빗소리.mp3"),
+      2: "./" + encodeURI("밤소리.mp3")
     };
 
     const AudioEngine = {
@@ -872,11 +872,11 @@
             if (this.ctx && this.ctx.state === "suspended") this.ctx.resume();
             if (this.nextFoleyType === "pen") {
               this.playPencilScratchSound();
-              this.setFoleyNotice(`✒️ 사각사각... 만년필 필기 소리가 들려옵니다 (${delaySec}초 주기)`);
+              this.setFoleyNotice(`✒️ 사각사각... (${delaySec}초 주기)`);
               this.nextFoleyType = "page";
             } else {
               this.playPageTurnSound();
-              this.setFoleyNotice(`📖 바스락... 조용히 책장 넘기는 소리가 들려옵니다 (${delaySec}초 주기)`);
+              this.setFoleyNotice(`📖 바스락... (${delaySec}초 주기)`);
               this.nextFoleyType = "pen";
             }
           }

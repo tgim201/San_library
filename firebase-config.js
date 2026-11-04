@@ -1,5 +1,5 @@
 /**
- * [심야의 고요한 실내 서재 - The Silent Library]
+ * [San 고요한 서재 - The Silent Library]
  * Firebase 연동 설정 파일
  */
 window.SILENT_LIBRARY_FIREBASE_CONFIG = {

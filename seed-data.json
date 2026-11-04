@@ -1,0 +1,56 @@
+{
+  "reading_logs": [
+    {
+      "id": "seed_1",
+      "nickname": "벽난로 앞의 독서가",
+      "bookTitle": "세계를 건너 너에게 갈게(이꽃님)",
+      "status": "completed",
+      "totalSeconds": 10860,
+      "quote": "시간을 건너서라도 너에게 닿을 수 있다면, 나는 몇 번이고 다시 편지를 쓸 거야.",
+      "memo": "서로 다른 시간을 살아가는 두 은유의 편지가 마음을 오래도록 울립니다. 벽난로 앞에서 따뜻하게 완독했어요.",
+      "progressNote": "완독 완료",
+      "mapName": "벽난로 서재",
+      "createdAt": "2026. 11. 03",
+      "createdAtMs": 1793692800000
+    },
+    {
+      "id": "seed_2",
+      "nickname": "창가의 따뜻한 찻잔",
+      "bookTitle": "고백해도 되는 타이밍(황영미)",
+      "status": "reading",
+      "totalSeconds": 4560,
+      "quote": "내 마음을 솔직하게 들여다보는 순간이 바로 가장 완벽한 타이밍인지도 모른다.",
+      "memo": "창가 자리에 앉아 밤바람 소리를 들으며 설레는 마음으로 읽고 있습니다.",
+      "progressNote": "~132p",
+      "mapName": "비내리는 창가도서관",
+      "createdAt": "2026. 11. 04",
+      "createdAtMs": 1793772000000
+    },
+    {
+      "id": "seed_3",
+      "nickname": "한옥 마루의 다도인",
+      "bookTitle": "톰소여의모험(마크 트웨인)",
+      "status": "completed",
+      "totalSeconds": 9420,
+      "quote": "모험이란 두려움이 없는 것이 아니라, 호기심이 두려움을 이기는 순간 시작된다.",
+      "memo": "어린 시절의 자유로움과 순수한 모험심이 다시 살아나는 기분입니다.",
+      "progressNote": "완독 완료",
+      "mapName": "심야 한옥 서재",
+      "createdAt": "2026. 11. 04",
+      "createdAtMs": 1793775600000
+    },
+    {
+      "id": "seed_4",
+      "nickname": "사각거리는 흑연",
+      "bookTitle": "해리포터와 비밀의방(조앤.K.롤링)",
+      "status": "reading",
+      "totalSeconds": 6180,
+      "quote": "진정한 우리가 누구인지를 보여주는 것은 우리의 능력이 아니라 우리의 선택이란다.",
+      "memo": "심야 서재의 아늑한 조명 아래에서 읽으니 호그와트 기숙사 휴게실에 있는 것 같아요!",
+      "progressNote": "~245p",
+      "mapName": "벽난로 서재",
+      "createdAt": "2026. 11. 04",
+      "createdAtMs": 1793779200000
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-# 🕯️ 심야의 고요한 실내 서재 (The Silent Library)
+# 🕯️ San 고요한 서재 (The Silent Library)
 
 아늑한 3가지 실내 서재 테마와 커스텀 MP3 ASMR 사운드(벽난로 장작불, 봄을 기다리는 밤, 비 오는 도시뷰 + 한옥 풍경소리), 그리고 **'다 읽었어요(완독 🏆)' / '이어서 읽기(진행 중 📖)'** 독서 추적 시스템을 갖춘 온라인 실내 도서관 웹 애플리케이션입니다.
 
@@ -18,9 +18,9 @@
   4. `해리포터와 비밀의방(조앤.K.롤링)`
 - `.nojekyll` : GitHub Pages 배포 시 한글/특수문자 파일명(MP3 등)이 누락 없이 서빙되도록 보장하는 설정 파일
 - **배경음 MP3 파일 (3종)**
-  - Map 1 (앤틱 벽난로 서재): `🔥 장작불 타는 소리 ASMR 🔥 2시간 벽난로 소리 Cozy Fireplace Sounds (compressed by happyscribe (mp3cut.net).mp3`
-  - Map 2 (비 내리는 창가 도서관): `[ASMR] 봄을 기다리는 밤 💨🌳🦉 바람소리, 밤부엉이와 코요테 소리를 담은 한 밤 중 숲 속의 페이크윈도우(가짜창문) (1) (1).mp3`
-  - Map 3 (심야 한옥 다실 서재): `[공부ASMR] 비 오는 도시뷰 앞에서 1시간 집중 타이머 빗소리로 집중력 높이기 l 1-Hour Focus Timer with Rain Sounds (1).mp3` (+ 은은한 풍경소리 레이어링 유지)
+  - Map 1 (벽난로 서재): `장작소리.mp3`
+  - Map 2 (비 내리는 창가 도서관): `빗소리.mp3`
+  - Map 3 (심야 한옥 서재): `밤소리.mp3` (+ 은은한 풍경소리 레이어링 유지)
 
 ---
 
@@ -55,18 +55,3 @@
 
 ### Step 3. `firebase-config.js` 입력
 `firebase-config.js` 파일에 본인의 Firebase 설정값을 입력하고 저장합니다.
-
----
-
-## 🌐 GitHub Pages 배포 가이드
-
-1. GitHub에서 새 저장소(Repository)를 생성합니다.
-2. 프로젝트 폴더의 모든 파일(`index.html`, `firebase-config.js`, `.nojekyll`, `firestore.rules`, MP3 파일 등)을 커밋 & 푸시합니다.
-   > **💡 대용량 MP3 파일 업로드 팁:** GitHub 기본 파일당 용량 제한(100MB)으로 인해 `🔥 장작불 타는 소리...mp3`(약 176MB) 파일을 일반 `git push`로 올릴 때 제한이 걸릴 경우, 아래 명령어로 **Git LFS(Large File Storage)**를 활성화하거나 오디오 인코딩 비트레이트를 낮춰(100MB 이하) 푸시하시면 정상 배포됩니다:
-   > ```bash
-   > git lfs install
-   > git lfs track "*.mp3"
-   > git add .gitattributes
-   > ```
-3. GitHub 저장소의 **Settings > Pages > Build and deployment**에서 `main` 브랜치 `/ (root)` 폴더를 선택하고 **Save**를 누릅니다.
-4. Firebase Console > **Authentication > 설정 > 승인된 도메인**에 배포된 `<아이디>.github.io` 도메인을 등록합니다.
